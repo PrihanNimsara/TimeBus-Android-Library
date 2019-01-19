@@ -1,8 +1,8 @@
-package com.developer.prihann.time_bus.logics;
+package com.developer.prihann.time_bus.library;
 
 import android.content.Context;
 
-import com.developer.prihann.time_bus.helpers.TimeBusHelpers;
+import com.developer.prihann.time_bus.logic.TimeBusLogic;
 
 import java.util.Date;
 
@@ -20,8 +20,11 @@ public final class TimeBus {
         return timeBus;
     }
 
-   public static String convertDatetoString(Date date){
+   public static String convertDateToString(Date date,String format){
+        return TimeBusLogic.getMyStringTypeDate(date,format);
+   }
 
-        return TimeBusHelpers.getMyDate(date);
+   public static Date convertStringToDate(String stringDate,String format){
+       return TimeBusLogic.getMyDateTypeDate(stringDate,format);
    }
 }
