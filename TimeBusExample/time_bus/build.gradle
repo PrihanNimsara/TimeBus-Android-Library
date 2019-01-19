@@ -1,5 +1,27 @@
 apply plugin: 'com.android.library'
+ext {
+    bintrayRepo = 'TimeBusRepo'
+    bintrayName = 'time-bus'
 
+    publishedGroupId = 'com.developer.prihann'
+    libraryName = 'time_bus'
+    artifact = 'time_bus'
+
+    libraryDescription = 'This is a android library.Please use this one to convert date to string or String to date'
+
+    siteUrl = 'https://github.com/PrihanNimsara/TimeBus-Android-Library'
+    gitUrl = 'https://github.com/PrihanNimsara/TimeBus-Android-Library.git'
+
+    libraryVersion = '0.1.0'
+
+    developerId = 'prihannimsara'
+    developerName = 'Prihan Nimsara'
+    developerEmail = 'iamprihan@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 android {
     compileSdkVersion 27
 
@@ -22,6 +44,7 @@ android {
         }
     }
 
+
 }
 
 dependencies {
@@ -32,3 +55,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
