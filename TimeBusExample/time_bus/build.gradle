@@ -1,7 +1,7 @@
 apply plugin: 'com.android.library'
 ext {
     bintrayRepo = 'TimeBusRepo'
-    bintrayName = 'time-bus'
+    bintrayName = 'timebus'
 
     publishedGroupId = 'com.developer.prihann'
     libraryName = 'time_bus'
