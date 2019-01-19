@@ -12,7 +12,7 @@ ext {
     siteUrl = 'https://github.com/PrihanNimsara/TimeBus-Android-Library'
     gitUrl = 'https://github.com/PrihanNimsara/TimeBus-Android-Library.git'
 
-    libraryVersion = '0.1.0'
+    libraryVersion = '1.1.0'
 
     developerId = 'prihannimsara'
     developerName = 'Prihan Nimsara'
@@ -31,7 +31,7 @@ android {
         minSdkVersion 17
         targetSdkVersion 27
         versionCode 1
-        versionName "1.0"
+        versionName "1.1.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
