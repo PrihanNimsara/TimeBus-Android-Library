@@ -16,7 +16,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        TimeBus.setContext(getApplicationContext());
-        Log.d("aaaaaaaaaaaaanb",TimeBus.convertDateToString(new Date(),DefaultFormat.getDefaultFormat(DefaultFormat.format01)));
+        Date date = new Date();
+        String stringDate = TimeBus.convertDateToString(date,"yyyy-MM-dd HH:mm:ss");
+
+        String stringDate1 = "2009-12-31 23:59:59";
+        Date date1 = TimeBus.convertStringToDate(stringDate1,"yyyy-MM-dd HH:mm:ss");
+
+        System.out.println("+++++++++++++++++++++++++++++++++"+stringDate);
+        System.out.println("---------------------------------"+date1);
     }
 }
