@@ -1,4 +1,4 @@
-# TimeBus-Android-Library
+# TimeBus-Android-Library      ![alt tag](https://bintray.com/prihannimsara/TimeBusRepo/timebus/1.1.0/link)
 
 This is an android library. Using this library you can convert String to Date and vise versa. It's may be reduce a code complexity of your android project.
 
